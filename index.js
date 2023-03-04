@@ -36,7 +36,6 @@
         data.forEach(singleData =>{
             const {name,features,image,published_in,id}=singleData; 
             const feature =features.map((feature)=>`<li>${feature}</li>`).join('');
-           
             const createDiv =document.createElement('div');
             createDiv.innerHTML =` 
             <div class="card h-100 p-2">
@@ -145,6 +144,8 @@
         showSingleData.appendChild(createDiv)
     })
 
+
+    
 const sortByDate = ()=>{
     isSorted = true;
     dataLoad()
