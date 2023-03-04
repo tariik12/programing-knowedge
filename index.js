@@ -1,4 +1,3 @@
-
    let isSorted = false;
    let isLoad = false;
    const dataLoad = ()=>{
@@ -50,7 +49,7 @@
                     <div class="d-flex align-items-center ">
                         <div>
                             <h5 class ="head">${name}</h5>
-                            <p class="card-text text"><img src="./image/Vector.png" alt=""> ${published_in}</p>
+                            <p class="card-text text"><img src="./image/Vector.png" alt="">  ${published_in}</p>
                         </div>
                     <button onClick=loadSingleDataDetails('${id}') class="btn btn-outline ms-auto " ><img src="./image/btn.png" class=" img-fluid " alt="" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
                     </div> 

@@ -14,28 +14,32 @@
     border: 1px solid #E7E7E7 !important;
     border-radius: 16px !important;
 }
+/* Basic-Price & Plan */
 .basic{
     color: #03A30A !important;
     background-color: #FFFFFF !important;
     border-radius: 16px !important;
     font-weight: 700;
 }
+/* Pro-Price & Plan */
 .pro{
     color: #F28927 !important;
     background-color: #FFFFFF !important;
     border-radius: 16px !important;
     font-weight: 700;
 }
+/* Enterprise-Price & Plan */
 .enterprise{
     color: #EB5757 !important;
     background-color: #FFFFFF !important;
     border-radius: 16px !important;
     font-weight: 700;
 }
-
+/* For All Details Text */
 .text{
     color: #585858 !important;
 }
+/* For All Head Text */
 .head{
     color: #111111 !important;
     font-weight: 600 !important;
