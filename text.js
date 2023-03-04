@@ -82,3 +82,18 @@
                 <p class="card-text">${data.pricing?data.pricing[2].price &&   data.pricing[2].plan:'Free of Cost /Enterprise'}</p>
             </div>
         </div>
+
+
+
+// document.getElementById('sort-by-date').addEventListener('click',function(){
+//     const sorting = sortAllData =>{
+//         sortAllData.sort(
+//             (a,b)=>new Date(a.published_in)-new Date(b.published_in)
+//         );
+//         const seeMoreBtn = 
+//     }
+// })
+
+
+const tools =  document.getElementById('sort-by-date')
+tools.sort((a, b) => new Date(b.published_in) - new Date(a.published_in))
