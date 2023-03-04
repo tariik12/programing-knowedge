@@ -41,16 +41,16 @@
             <div class="card h-100 p-2">
                 <img src="${image}" class="card-img-top  rounded h-100 "  alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Features</h5>
-                    <ol class="">
+                    <h5 class="card-title head">Features</h5>
+                    <ol class="text">
                         ${feature}
                     </ol>
                 </div>
                 <div class="card-footer bg-white">
                     <div class="d-flex align-items-center ">
                         <div>
-                            <h5>${name}</h5>
-                            <p class="card-text"><img src="./image/Vector.png" alt=""> ${published_in}</p>
+                            <h5 class ="head">${name}</h5>
+                            <p class="card-text text"><img src="./image/Vector.png" alt=""> ${published_in}</p>
                         </div>
                     <button onClick=loadSingleDataDetails('${id}') class="btn btn-outline ms-auto " ><img src="./image/btn.png" class=" img-fluid " alt="" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
                     </div> 
@@ -97,22 +97,22 @@
             <div class=" col ">
                 <div class="modal-color1 p-4  card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">${description}</h5>
-                        <div class="d-flex justify-content-between gap-2">
-                            <div class="card p-2">
+                        <h5 class="card-title head">${description}</h5>
+                        <div class="d-flex justify-content-between text-center gap-2">
+                            <div class="card basic p-3">
                                 <p class="card-text">${pricing?pricing[0].price + '\n ' + pricing[0]. plan:'Free Of Cost/Pro'}</p>
                             </div> 
-                            <div class="card p-2">
-                                <p class="card-text">${pricing?pricing[1].price + '\n ' + pricing[1].plan:'Free Of Cost/Pro'}</p>
+                            <div class="card pro p-3">
+                                <p class="card-text ">${pricing?pricing[1].price + '\n ' + pricing[1].plan:'Free Of Cost/Pro'}</p>
                             </div>
-                            <div class="card p-2">
+                            <div class="card enterprise p-3">
                                 <p class="card-text">${ pricing?pricing[2].price + '\n ' + pricing[2].plan:'Free of Cost /Enterprise'}</p>
                             </div>
                         </div> 
                         <div class="d-flex justify-content-between my-2  gap-4">
                             <div>
-                                <h4>Feature</h4>
-                                <ul>
+                                <h4 class ="head">Feature</h4>
+                                <ul class ="text">
                                     <li>${features[1].feature_name}</li>
                                     <li>${features[2].feature_name}</li>
                                     <li>${features[3].feature_name}</li>
@@ -120,8 +120,8 @@
                                 </ul>
                             </div>
                             <div class="pe-0 me-0 ms-auto" >
-                                <h4 class="me-2">integration</h4>
-                                <ul>
+                                <h4 class="me-2 head">integration</h4>
+                                <ul class="text">
                                     ${integrations?integration:'No data Found'}
                                 </ul>
                             </div>
@@ -134,8 +134,8 @@
                         <img src="${image_link[0]}" class="card-img-top rounded" alt="...">
                         <p class="btn btn-danger ${(accuracy.score)?accuracy.score:'d-none'}  p-0  w-50  position-absolute top-0  start-50 translate-middle" >${(accuracy.score)?accuracy.score+'% accuracy' :''}</p>
                     <div class="card-body text-center">
-                        <h5 class="card-title">${input_output_examples?input_output_examples[0].input:'Can you give any example?'}</h5>
-                        <p class="card-text">${input_output_examples?input_output_examples[0].output:'No! Not Yet! Take a break!!!'}</p>
+                        <h5 class="card-title head">${input_output_examples?input_output_examples[0].input:'Can you give any example?'}</h5>
+                        <p class="card-text text">${input_output_examples?input_output_examples[0].output:'No! Not Yet! Take a break!!!'}</p>
                     </div> 
                 </div>
             </div>
@@ -143,9 +143,6 @@
         `
         showSingleData.appendChild(createDiv)
     })
-
-
-    
 const sortByDate = ()=>{
     isSorted = true;
     dataLoad()

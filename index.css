@@ -1,12 +1,43 @@
+/* font-family */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* modal-card design left */
 .modal-color1{
     background-color: rgba(235, 87, 87, 0.05)!important;
     border: 1px solid #EB5757 !important;
     border-radius: 16px !important;
 }
-
-
+/* modal-card design right */
 .modal-color2{
     background-color: #FFFFFF !important;
     border: 1px solid #E7E7E7 !important;
     border-radius: 16px !important;
+}
+.basic{
+    color: #03A30A !important;
+    background-color: #FFFFFF !important;
+    border-radius: 16px !important;
+    font-weight: 700;
+}
+.pro{
+    color: #F28927 !important;
+    background-color: #FFFFFF !important;
+    border-radius: 16px !important;
+    font-weight: 700;
+}
+.enterprise{
+    color: #EB5757 !important;
+    background-color: #FFFFFF !important;
+    border-radius: 16px !important;
+    font-weight: 700;
+}
+
+.text{
+    color: #585858 !important;
+}
+.head{
+    color: #111111 !important;
+    font-weight: 600 !important;
+    font-size: 25px !important;
 }
